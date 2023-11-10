@@ -1,3 +1,4 @@
+
 import {
   mobile,
   backend,
@@ -189,6 +190,7 @@ const projects = [
     ],
     image: carrent,
     source_code_link: "https://github.com/david3022/Amazon_better_NextJS.git",
+    source_code_link2: "https://amazon-nxt-js.vercel.app",
   },
   {
     name: "Restaurant",
@@ -210,6 +212,7 @@ const projects = [
     ],
     image: jobit,
     source_code_link: "https://github.com/david3022/Restorant",
+    source_code_link2: "https://restorant-nine.vercel.app",
   },
   {
     name: "Tetris Game",
@@ -231,7 +234,10 @@ const projects = [
     ],
     image: tripguide,
     source_code_link: "https://github.com/david3022/Tetris02.git",
+    source_code_link2: "https://tetris02-david3022s-projects.vercel.app",
   },
 ];
 
 export { services, technologies, experiences, projects };
+
+   
