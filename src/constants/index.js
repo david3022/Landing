@@ -173,7 +173,7 @@ const projects = [
   {
     name: "Amazon Clon",
     description:
-      "The Amazon's UI homepage, allowing users to add items to the favorites section or shopping cart.This project shows effective use of modern web technologies.",
+      "The Amazon's UI homepage, allowing users to add items to the favorites section or shopping cart.This project shows effective use of modern web technologies.  Click HERE",
     tags: [
       {
         name: "React",
@@ -195,7 +195,7 @@ const projects = [
   {
     name: "Restaurant",
     description:
-      "Restaurant SPA website that displays an extensive menu to the user, allowing them to select their preference to retrieve ingredient descriptions from an API or filter them.",
+      "Restaurant SPA website that displays an extensive menu to the user, allowing them to select their preference to retrieve ingredient descriptions from an API or filter them.  Click HERE",
     tags: [
       {
         name: "React",
@@ -217,7 +217,7 @@ const projects = [
   {
     name: "Tetris Game",
     description:
-      "Classic Tetris video game project where drawing skills and programming logic for piece rotation and collision are put into practice.",
+      "Classic Tetris video game project where drawing skills and programming logic for piece rotation and collision are put into practice.  Click HERE",
     tags: [
       {
         name: "Html",
