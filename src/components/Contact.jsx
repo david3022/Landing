@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
@@ -121,6 +120,19 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
+        <br></br>
+        
+        <button
+       type='submit'
+       className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+       onClick={() => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }}
+        >
+        Go back to the Top
+      </button>
+        
+        
       </motion.div>
 
       <motion.div
@@ -129,6 +141,8 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
+
+      
     </div>
   );
 };
