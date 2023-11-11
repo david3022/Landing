@@ -195,7 +195,7 @@ const projects = [
   {
     name: "Restaurant",
     description:
-      "Restaurant SPA website that displays an extensive menu to the user, allowing them to select their preference to retrieve ingredient descriptions from an API or filter them.  Click HERE",
+      "Restaurant SPA website with an extensive menu to the user, allowing them to select their preference to retrieve ingredient descriptions from an API or filter them.  Click HERE",
     tags: [
       {
         name: "React",
