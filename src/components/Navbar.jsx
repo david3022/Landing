@@ -5,6 +5,7 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
+
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
@@ -63,6 +64,10 @@ const Navbar = () => {
           ))}
         </ul>
 
+        <a className='text-white text-[18px] font-bold cursor-pointer flex ' href="https://www.linkedin.com/in/david-fajardo-04bb6424b/" target="_blank">
+        My Linkedin
+    </a>
+
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
             src={toggle ? close : menu}
@@ -92,6 +97,8 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
+
+            <div></div>
           </div>
         </div>
       </div>
