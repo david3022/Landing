@@ -1,3 +1,4 @@
+
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
@@ -32,16 +33,19 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        'service_02ldrrv',
+        'template_8lj56my0',
+        // import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        // import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "David Fajardo",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "davidfajardo3022@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        'lboObDjrbWitl6DVa',
+        // import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
@@ -58,23 +62,23 @@ const Contact = () => {
           setLoading(false);
           console.error(error);
 
-          alert("Ahh, something went wrong. Please try again.");
+          alert("Oh, something went wrong. Please try again.");
         }
       );
   };
 
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+      // className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
     >
       <motion.div
-        variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+        // variants={slideIn("left", "tween", 0.2, 1)}
+        // className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        {/* <p className={styles.sectionSubText}>Get in touch</p>
+        <h3 className={styles.sectionHeadText}>Contact.</h3> */}
 
-        <form
+        {/* <form
           ref={formRef}
           onSubmit={handleSubmit}
           className='mt-12 flex flex-col gap-8'
@@ -119,9 +123,9 @@ const Contact = () => {
           >
             {loading ? "Sending..." : "Send"}
           </button>
-        </form>
-        <br></br>
-        
+        </form> */}
+        {/* <br></br>
+
         <button
        type='submit'
        className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
@@ -130,9 +134,9 @@ const Contact = () => {
         }}
         >
         Go back to the Top
-      </button>
-        
-        
+      </button> */}
+
+
       </motion.div>
 
       <motion.div
@@ -142,7 +146,17 @@ const Contact = () => {
         <EarthCanvas />
       </motion.div>
 
-      
+      <button
+       type='submit'
+       className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+       onClick={() => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }}
+        >
+        Go back to the Top
+      </button>
+
+
     </div>
   );
 };
