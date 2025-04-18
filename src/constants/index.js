@@ -121,7 +121,7 @@ const experiences = [
     title: "Front End",
     icon: html,
     iconBg: "#383E56",
-    //date: "November 2022-Present day",
+    
     points: [
       "Html 5",
       "CSS 3",
