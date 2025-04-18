@@ -137,7 +137,6 @@ const experiences = [
     title: "Backend ",
     icon: javascript,
     iconBg: "#E6DEDD",
-    date: "February 2023 - June 2023",
     points: [
       "Javascript",
       "Node",
@@ -148,7 +147,6 @@ const experiences = [
     title: "Data Base",
     icon: mongodb,
     iconBg: "#383E56",
-    date: "June 2023- October 2023",
     points: [
       "MongoDB",
       "Sequalize",
@@ -158,7 +156,6 @@ const experiences = [
     title: "Others",
     icon: git,
     iconBg: "#E6DEDD",
-    date: "October 2023 - Present day",
     points: [
       "Git",
       "Figma",
